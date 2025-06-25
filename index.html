@@ -5,6 +5,7 @@
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> IT3203 Project </title>
+    <!--Linking my style sheet and the two fonts used within the web pages-->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" 
      rel="stylesheet">
@@ -12,6 +13,8 @@
      rel="stylesheet">
   </head>
   <body> 
+    <!--Unordered list under the navbar class to create the navigation bar containing
+    links to all pages within the website-->
     <nav class="navbar">
       <ul>
         <li><a href="index.html" target="_self" title="Home">
@@ -24,10 +27,53 @@
           References and Resources</a></li>
       </ul>
     </nav>
+    <!--Main header and intro to what the website is-->
     <h1>HTML Home</h1>
     <main>
-      <p>HTML or HyperText Markupn language is t</p>
+      <p>HTML or HyperText Markupn language continues to be the standard markup language
+        to structure and create web pages, over 30 years after its creation in 1991.
+        This website has been designed to provide information and resources in regards to 
+        what HTML is, its history, key information, and helpful resources for your further research.
+      </p>
+      <!--Addition of an image, setting the width and heigh to fit the page size-->
+      <img src="html.jpg" alt="Stock photo showing HTML" title="HTML stock photo" 
+      width=100% height=auto>
+      <!--Second header to caption the table below with three columns "Term", "Definition", and "Example"-->
+      <h2>Key Terms</h2>
+      <table>
+        <tr>
+          <th>Term</th>
+          <th>Definition</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+        <td>HTML</td>
+        <td>HyperText Markup Language, the standard markup language used in the creation 
+        of web pages.</td>
+        <td> enclosed in <> !DOCTYPE</td>
+      </tr>
+      
+      <tr>
+        <td>Tags</td>
+        <td>A markup structure "<>" used to define HTML elements acts as a container.</td>
+        <td>All within "< >": head, body, p, h2, table, a, li, img, link, etc.</td>
+      </tr>
+      <tr>
+        <td>Attributes</td>
+        <td>A property of a tag that provides additional information about HTML elements.</td>
+        <td>name="value", style="color", width="100px", etc</td>
+      </tr>
+      <tr>
+        <td>Element</td>
+        <td>Represents the different types of content within a webpage, beginning with a start tag, containing
+          content such as the attributes and ending with an end tag.</td>
+        <td>< h2 > My header title style="color:blue" < h2 ></h2> </td>
+      </tr>
+      </table>
     </main>
-    
   </body>
+  <!--Footer at the bottom of every page linking to the class website-->
+  <footer> <p> Class project <a href="https://ksuweb.github.io/IT3203/" title="IT3203">
+    IT3203</a>
+    </p></footer>
 </html>

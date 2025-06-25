@@ -14,8 +14,26 @@ main{
 h1{
     text-align: center;
     font-family: "amatic SC";
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+h2{
+     text-align: center;
+    font-family: "amatic SC";
     font-size: xx-large;
     font-weight: bolder;
+}
+table{
+    width: 100%;
+    border-spacing: 0px;
+    height: auto;
+    text-align: left;
+}
+table, th, td{
+    border: 1px solid black;
+}
+th, td{
+    padding: 7px;
 }
 .navbar ul{
     list-style-type: none;
@@ -39,4 +57,8 @@ h1{
 }
 .navbar li{
     float: left;
+}
+footer{
+    text-align: center;
+    font-family: "Rationale";
 }
