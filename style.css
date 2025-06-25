@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+main{
+    margin: 20px;
+    font-family: "Rationale";
+}
+h1{
+    text-align: center;
+    font-family: "amatic SC";
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(219, 109, 160);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-family: "amatic SC";
+    font-size: x-large;
+    font-weight: bolder;
+}
+.navbar a{
+    color:rgb(83, 61, 99);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(224, 191, 196) ;
+}
+.navbar li{
+    float: left;
+}
