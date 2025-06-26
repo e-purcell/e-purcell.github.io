@@ -1,3 +1,4 @@
+/* possibly build upon use a photo as background later, atp is a bit distracting
 body{
     margin: 0px;
     background-image: url(background.png);
@@ -6,9 +7,13 @@ body{
     background-position: center;
     background-size: cover;
     
-}
+} */
+ body{
+    margin: 0px;
+    background-color: #FADADD;
+ }
 main{
-    margin: 20px;
+    margin: 10px;
     font-family: "Rationale";
 }
 h1{
@@ -22,6 +27,12 @@ h2{
     font-family: "amatic SC";
     font-size: xx-large;
     font-weight: bolder;
+}
+h3{
+    margin: 10px;
+    font-family: "Rationale";
+    font-weight: 550;
+    font-size: larger;
 }
 table{
     width: 100%;
@@ -37,7 +48,7 @@ th, td{
 }
 .navbar ul{
     list-style-type: none;
-    background-color: rgb(219, 109, 160);
+    background-color: rgb(248, 148, 195);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -46,7 +57,7 @@ th, td{
     font-weight: bolder;
 }
 .navbar a{
-    color:rgb(83, 61, 99);
+    color:rgb(83, 61, 99); 
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -55,10 +66,33 @@ th, td{
 .navbar a:hover{
     background-color: rgb(224, 191, 196) ;
 }
+/* work on centering navbar in future */
 .navbar li{
     float: left;
 }
 footer{
     text-align: center;
     font-family: "Rationale";
+}
+#indent{
+    margin-left: 50px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 5px hsl(327, 95%, 83%) outset;
+    padding-right: 30px;
+}
+.item{
+    width: 200px;
+    height: auto;
+    text-align: left;
+    flex-grow: 1;
+}
+#item5{
+    flex-grow: 5;
+}
+.link a:hover{
+    color: rgb(245, 177, 215);
 }
