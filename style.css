@@ -1,17 +1,14 @@
-/* possibly build upon use a photo as background later, atp is a bit distracting
+possibly build upon use a photo as background later, atp is a bit distracting
 body{
     margin: 0px;
-    background-image: url(background.png);
+    background-image: url(adrien-olichon-RCAhiGJsUUE-unsplash.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    
-} */
- body{
-    margin: 0px;
-    background-color: #FADADD;
- }
+    background-color: black;
+    color:rgb(191, 248, 255)
+} 
 main{
     margin: 10px;
     font-family: "Rationale";
@@ -48,7 +45,7 @@ th, td{
 }
 .navbar ul{
     list-style-type: none;
-    background-color: rgb(248, 148, 195);
+    background-color: rgb(0, 68, 88);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -57,14 +54,14 @@ th, td{
     font-weight: bolder;
 }
 .navbar a{
-    color:rgb(83, 61, 99); 
+    color:rgb(191, 248, 255); 
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
 }
 .navbar a:hover{
-    background-color: rgb(224, 191, 196) ;
+    background-color: rgb(0, 0, 0) ;
 }
 /* work on centering navbar in future */
 .navbar li{
@@ -81,7 +78,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    border: 5px hsl(327, 95%, 83%) outset;
+    border: 5px rgb(0, 68, 88) outset;
     padding-right: 30px;
 }
 .item{
@@ -96,50 +93,81 @@ footer{
 .link a:hover{
     color: rgb(245, 177, 215);
 }
-.quizcontainer{
-    width: 100%;
-    max-width: 400px;
-}
-.quizcontainer .progress{
+.quizContainer{
     display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-    align-items: center;
-}
-.quizcontainer .progress span {
+    align-content: center;
+    flex-direction: column;
     width: 100%;
-    height: 5px;
-    border-radius: 20px;
-    background-color: gray;
+    max-width: auto;
+    margin: auto;
+    border: 5px rgb(0, 68, 88) outset;
+    border-radius: 0.5em;
+    padding-right: -100px;
 }
-.quizcontainer .progress span.seen {
-    background-color: cadetblue;
+.quiz-progress{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
 }
-.quizcontainer .qcontainer {
+/*Progress bar showing what question you are on*/ 
+.quiz-progress span{
+    width: 100%;
+    height: 4px;
+    border-radius: 25px;
+    background-color: rgb(0, 68, 88);
+}
+/*Section becomes the new color to show progress*/
+.quiz-progress span.seen{
+    background-color: rgb(191, 248, 255);
+}
+.question-container {
     margin: 3px;
     font-size: small;
 }
-.quizcontainer .qcontainer p:first-of-type {
-    color: black;
-}
-.quizcontainer .qcontainer p:last-of-type {
+.question-container p:first-of-type {
     font-size: medium;
-    color: cadetblue;
+    color: rgba(191, 248, 255, 0.651);
 }
-.quizcontainer .anscontainer button{
+.question-container p:last-of-type {
+    font-size: x-large;
+    color: rgb(191, 248, 255);
+}
+.answer-container button{
     display: block;
     width: 100%;
     padding: 5px;
     border: none;
-    font-size: small;
-    margin: 3px;
-    background-color: rgb(83, 61, 99);
-    border: #FADADD;
-    color: black;
+    font-size: 20px;
+    margin: auto;
+    background-color: rgb(0, 68, 88);
+    color: rgb(191, 248, 255);
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.quizcontainer .anscontainer button:hover{
+.answer-container button:hover{
     background-color: rgb(245, 177, 215);
-    color: rgb(156, 156, 156);
+    color: black;
+}
+.correct{
+    background-color: rgb(161, 255, 161) !important;
+    color: black;
+}
+.incorrect{
+background-color: rgb(255, 90, 90) !important;
+    color: black;
+}
+.hide{
+    display: none;
+}
+#startButton{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    font-size: 10px;
+    margin: auto;
+    background-color: rgb(0, 68, 88);
+    color: rgb(191, 248, 255);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }

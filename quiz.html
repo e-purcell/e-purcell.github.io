@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> IT3203 Project </title>
+    <title> Quiz </title>
     <!--Linking my style sheet and the two fonts used within the web pages-->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" 
@@ -29,15 +29,21 @@
       </ul>
     </nav>
     <main>
+        <div class="quizContainer">
         <h1>Quiz</h1>
         <h2>Test your knowledge of HTML with this short quiz!</h2>
-        <div class="quizContainer">
-            <div class="progress" id="quizProgress"></div>
-            <div class="qcontainer" id="questionContainer"></div>
-            <div class="anscontainer" id="answerContainer"></div>
+            <div class="quiz-progress" id="quizProgress">
+                <!--<div class="progressBarFill" id="quizProgressFill"></div> -->
+            </div>
+            <button id="startButton">Start Quiz</button>
+            <div class="question-container" id="questionContainer"></div>
+            <div class="answer-container" id="answerContainer">
+                </div>
+            <button id="nextButton" class="hide">Next</button>
+            <div id="result" class="hide"></div>
         </div>
     </main>
-     <script> src="index.js"</script>
+    <script src="index.js"></script>
   </body>
   <!--Footer at the bottom of every page linking to the class website-->
   <footer class="link"> <p> Class project <a href="https://ksuweb.github.io/IT3203/" title="IT3203">
