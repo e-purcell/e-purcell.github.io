@@ -99,8 +99,6 @@ footer{
     display: block;
     align-content: center;
     text-align: center;
-    width: 100%;
-    max-width: 93%;
     font-family: "Rationale";
     border: 5px rgb(0, 68, 88) outset;
     padding: 30px;
