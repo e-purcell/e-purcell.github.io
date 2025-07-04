@@ -22,13 +22,13 @@
           History</a></li>
         <li><a href="whatis.html" target=_self title="What is HTML?" >
           What is HTML?</a></li>
+        <li><a href="quiz.html" target="_self" title="Quiz"> Quiz</a></li>
         <li><a href="refandres.html" target=_self title="References and Resources" >
           References and Resources</a></li>
-        <!--Move before references on each page-->
-        <li><a href="quiz.html" target="_self" title="Quiz"> Quiz</a></li>
       </ul>
     </nav>
     <main>
+        <!--Container that holds everything quiz related, ie. questions, buttons, answers-->
         <div class="quizContainer">
         <h1>Quiz</h1>
         <h2>Test your knowledge of HTML with this short quiz!</h2>
@@ -41,8 +41,10 @@
                 </div>
             <button id="nextButton" class="hide">Next</button>
             <div id="result" class="hide"></div>
+            <button id="restartButton" class="hide">Restart Quiz</button>
         </div>
     </main>
+    <!--Linking the JavaScript file to the HTML file, allowing for the quiz to function-->
     <script src="index.js"></script>
   </body>
   <!--Footer at the bottom of every page linking to the class website-->
