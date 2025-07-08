@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 console.log("Quiz script loaded successfully!"); //check that script loaded
 // All questions for the quiz
 const questions = [
@@ -210,3 +211,13 @@ function startQuiz(index) {
     nextButton.classList.add("hide");
 }
 }
+
+console.log("Toggle button:", toggle); // Check if toggle button is selected
+
+// Mobile navigation toggle
+const toggle = document.querySelector(".navtoggle");
+const links = document.querySelector(".links");
+toggle.addEventListener("click", () => {
+    links.classList.toggle("show");
+});
+});
