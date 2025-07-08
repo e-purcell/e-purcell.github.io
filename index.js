@@ -1,5 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
+// Mobile navigation toggle
+const toggle = document.querySelector(".navtoggle");
+const links = document.querySelector(".links");
+console.log("Toggle button:", toggle); // Check if toggle button is selected
+if (toggle && links) {
+    toggle.addEventListener("click", () => {
+    links.classList.toggle("show");
+    });
+}
+
 console.log("Quiz script loaded successfully!"); //check that script loaded
+// Elements from the HTML
+const quizProgress = document.getElementById("quizProgress");
+const questionContainer = document.getElementById("questionContainer");
+const answerContainer = document.getElementById("answerContainer");
+const nextButton = document.getElementById("nextButton");
+const resultDiv = document.getElementById("result");
+const startButton = document.getElementById("startButton");
+const restartButton = document.getElementById("restartButton");
+
+if ( quizProgress && questionContainer && answerContainer && nextButton && resultDiv && startButton && restartButton) {
+    console.log("Quiz page detected!"); // Check if all elements are selected
+    runQuiz(); // Call the function to run the quiz if on correct page
+} else {
+    console.log("Quiz page not detected!")
+}
+function runQuiz() {
 // All questions for the quiz
 const questions = [
     {
@@ -35,14 +61,7 @@ const questions = [
         correctAnswer: "Tim Berners-Lee",
     },
 ];
-// Elements from the HTML
-const quizProgress = document.getElementById("quizProgress");
-const questionContainer = document.getElementById("questionContainer");
-const answerContainer = document.getElementById("answerContainer");
-const nextButton = document.getElementById("nextButton");
-const resultDiv = document.getElementById("result");
-const startButton = document.getElementById("startButton");
-const restartButton = document.getElementById("restartButton");
+
 // Variables to keep track of the quiz state
 let currentQuestionIndex = 0;
 let score = 0;
@@ -211,13 +230,8 @@ function startQuiz(index) {
     nextButton.classList.add("hide");
 }
 }
-
-console.log("Toggle button:", toggle); // Check if toggle button is selected
-
-// Mobile navigation toggle
-const toggle = document.querySelector(".navtoggle");
-const links = document.querySelector(".links");
-toggle.addEventListener("click", () => {
-    links.classList.toggle("show");
+}
 });
-});
+
+
+
