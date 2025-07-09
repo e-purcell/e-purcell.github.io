@@ -108,7 +108,9 @@ footer{
     flex-grow: 1;
     color: rgba(191, 248, 255, 0.644);
 }
-
+.link a:hover{
+    color: rgb(245, 177, 215);
+}
 .linkfoot a:hover{
     color: rgb(245, 177, 215);
 }
